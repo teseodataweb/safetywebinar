@@ -19,6 +19,41 @@
 
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+<style>
+	/* pista y barra para que siempre se vean, aun sin el theme */
+	.skill-bar .bar-inner{position:relative;height:4px;background:#e8eef6;border-radius:4px;overflow:hidden}
+	.skill-bar .bar{position:absolute;left:0;top:0;height:100%;background:#1b6cff;border-radius:4px;transition:width .8s ease}
+	/* opcional: colores por item, si quieres diferenciar */
+	.skills .skill-item:nth-child(2) .bar{background:#2c90ff}
+	.skills .skill-item:nth-child(3) .bar{background:#ff6b6b}
+	.skills .skill-item:nth-child(4) .bar{background:#14c38e}
+	.skills .skill-item:nth-child(5) .bar{background:#7a5cff}
+	.skills .skill-item:nth-child(6) .bar{background:#f4b000}
+  </style>
+  
+  <script>
+	// Fallback: lee data-width y data-stop y los aplica (sin WOW/appear)
+	(function () {
+	  function apply() {
+		document.querySelectorAll('.progress-line').forEach(function (el) {
+		  var w = el.getAttribute('data-width') || el.dataset.width;
+		  if (w) el.style.width = w + '%';
+		});
+		document.querySelectorAll('.count-text').forEach(function (el) {
+		  var stop = el.getAttribute('data-stop') || el.dataset.stop;
+		  if (stop) el.textContent = stop;
+		});
+	  }
+  
+	  // en cuanto cargue el DOM y también si vuelves a insertar la sección
+	  if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', apply);
+	  } else {
+		apply();
+	  }
+	})();
+  </script>
+  
 </head>
 
 <body>
@@ -166,10 +201,10 @@
 				<!-- Content Column -->
 				<div class="content-column col-lg-6 col-md-12 col-sm-12">
 					<div class="inner-column">
-						<div class="title">Digital Marketing</div>
-						<h1>We are one of the most <br> effective SEO agencies <br> in the universe.</h1>
-						<div class="text">Robust search engine marketing strategies 100% results.</div>
-						<a href="#" class="theme-btn btn-style-one">Analyze Your Site <span class="icon fa fa-arrow-right"></span></a>
+						<div class="title">Webinar</div>
+						<h1>Webinar Personalizado: Seguridad Inteligente 2025</h1>
+						<div class="text">Valorado en $4,000 MXN – Hoy sin costo. Cupos limitados.</div>
+						<a href="#" class="theme-btn btn-style-one">Reservar mi lugar<span class="icon fa fa-arrow-right"></span></a>
 					</div>
 				</div>
 				<!-- Image Column -->
@@ -184,6 +219,284 @@
 		</div>
 	</section>
 	<!--End Banner Section-->
+
+		<!-- Services Page Section -->
+		<section class="services-page-section">
+		
+			<!-- Icons -->
+			<div class="icons parallax-scene-2">
+				<!-- Icon One -->
+				<div data-depth="0.20" class="icon-one parallax-layer" style="background-image:url(/images/icons/icon-1.png)"></div>
+				<!-- Icon Two -->
+				<div data-depth="0.50" class="icon-two parallax-layer" style="background-image:url(images/icons/icon-2.png)"></div>
+				<!-- Icon Three -->
+				<div data-depth="0.10" class="icon-three parallax-layer" style="background-image:url(images/icons/icon-3.png)"></div>
+				<!-- Icon Four -->
+				<div data-depth="0.30" class="icon-four parallax-layer" style="background-image:url(images/icons/icon-4.png)"></div>
+				<!-- Icon Five -->
+				<div data-depth="0.10" class="icon-five parallax-layer" style="background-image:url(images/icons/icon-5.png)"></div>
+				<!-- Icon Six -->
+				<div data-depth="0.20" class="icon-six parallax-layer" style="background-image:url(images/icons/icon-7.png)"></div>
+				<!-- Icon Seven -->
+				<div data-depth="0.20" class="icon-seven parallax-layer" style="background-image:url(images/icons/icon-8.png)"></div>
+			</div>
+			
+			<div class="auto-container">
+				<div class="row clearfix">
+					
+					<!-- Services Block -->
+					<div class="services-block-six col-lg-4 col-md-6 col-sm-12">
+						<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+							<div class="icon-box">
+								<span class="circle"></span>
+								<span class="icon flaticon-report"></span>
+							</div>
+							<h3><a href="service-detail.html">Evitar multas, sanciones </a></h3>
+							<div class="text">y cierres derivados del incumplimiento normativo.</div>
+						</div>
+					</div>
+					
+					<!-- Services Block -->
+					<div class="services-block-six col-lg-4 col-md-6 col-sm-12">
+						<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+							<div class="icon-box">
+								<span class="circle"></span>
+								<span class="icon flaticon-social-media"></span>
+							</div>
+							<h3><a href="service-detail.html">Cómo identificar y corregir</a></h3>
+							<div class="text">brechas en protocolos de seguridad.</div>
+						</div>
+					</div>
+					
+					<!-- Services Block -->
+					<div class="services-block-six col-lg-4 col-md-6 col-sm-12">
+						<div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+							<div class="icon-box">
+								<span class="circle"></span>
+								<span class="icon flaticon-www"></span>
+							</div>
+							<h3><a href="service-detail.html">Conocer cambios regulatorios</a></h3>
+							<div class="text">clave para 2025.</div>
+						</div>
+					</div>
+					
+					<!-- Services Block -->
+					<div class="services-block-six col-lg-4 col-md-6 col-sm-12">
+						<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+							<div class="icon-box">
+								<span class="circle"></span>
+								<span class="icon flaticon-report"></span>
+							</div>
+							<h3><a href="service-detail.html">Recibir consejos prácticos </a></h3>
+							<div class="text">aplicables desde el primer día.</div>
+						</div>
+					</div>
+					
+					<!-- Services Block -->
+					<div class="services-block-six col-lg-4 col-md-6 col-sm-12">
+						<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+							<div class="icon-box">
+								<span class="circle"></span>
+								<span class="icon flaticon-target"></span>
+							</div>
+							<h3><a href="service-detail.html">Descubrir casos reales con </a></h3>
+							<div class="text">impacto en seguridad y productividad.</div>
+						</div>
+					</div>
+					
+					<!-- Services Block -->
+					<div class="services-block-six col-lg-4 col-md-6 col-sm-12">
+						<div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+							<div class="icon-box">
+								<span class="circle"></span>
+								<span class="icon flaticon-send"></span>
+							</div>
+							<h3><a href="service-detail.html">Acceso a checklist de seguridad</a></h3>
+							<div class="text">industrial y certificado digital.</div>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+		</section>
+		<!-- End Services Page Section -->
+
+		<!-- Skill Section (Agenda del Webinar) -->
+<section class="skill-section">
+	<div class="auto-container">
+	  <div class="row clearfix">
+		
+		<!-- Blocks Column (Bullets) -->
+		<div class="blocks-column col-lg-6 col-md-12 col-sm-12">
+		  <div class="inner-column">
+			<div class="circles-layer" style="background-image:url(images/background/pattern-29.html)"></div>
+			<div class="row clearfix">
+			  
+			  <!-- Bullet 1 -->
+			  <div class="services-block-five col-lg-6 col-md-6 col-sm-12">
+				<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+				  <div class="icon-box">
+					<span class="icon flaticon-start"></span>
+				  </div>
+				  <h3><a href="#">Objetivo de la sesión</a></h3>
+				  <div class="text">
+					Identificar riesgos y brechas de seguridad para 2025 y definir prioridades de acción inmediatas.
+				  </div>
+				</div>
+			  </div>
+			  
+			  <!-- Bullet 2 -->
+			  <div class="services-block-five col-lg-6 col-md-6 col-sm-12">
+				<div class="inner-box wow fadeInLeft" data-wow-delay="250ms" data-wow-duration="1500ms">
+				  <div class="icon-box">
+					<span class="icon flaticon-award"></span>
+				  </div>
+				  <h3><a href="#">Formato</a></h3>
+				  <div class="text">
+					Sesión personalizada y consultiva, enfocada en tu operación y contexto regulatorio.
+				  </div>
+				</div>
+			  </div>
+			  
+			  <!-- Bullet 3 -->
+			  <div class="services-block-five col-lg-6 col-md-6 col-sm-12">
+				<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+				  <div class="icon-box">
+					<span class="icon flaticon-phone-call"></span>
+				  </div>
+				  <h3><a href="#">Duración</a></h3>
+				  <div class="text">
+					30 minutos: revisión ejecutiva, puntos críticos y próximos pasos claros.
+				  </div>
+				</div>
+			  </div>
+			  
+			  <!-- Bullet 4 -->
+			  <div class="services-block-five col-lg-6 col-md-6 col-sm-12">
+				<div class="inner-box wow fadeInLeft" data-wow-delay="250ms" data-wow-duration="1500ms">
+				  <div class="icon-box">
+					<span class="icon flaticon-www"></span>
+				  </div>
+				  <h3><a href="#">Entregables</a></h3>
+				  <div class="text">
+					Checklist de cumplimiento y una agenda personalizada para implementar de inmediato.
+				  </div>
+				</div>
+			  </div>
+			  
+			</div>
+		  </div>
+		</div>
+		
+		<!-- Skill Column (Cronograma) -->
+		<div class="skill-column col-lg-6 col-md-12 col-sm-12">
+		  <div class="inner-column" style="background-image:url(images/background/10.html)">
+			
+			<!-- Icons (se conservan) -->
+			<div class="icons parallax-scene-1">
+			  <div data-depth="0.20" class="icon-one parallax-layer" style="background-image:url(images/icons/icon-9.html)"></div>
+			  <div data-depth="0.50" class="icon-two parallax-layer" style="background-image:url(images/icons/icon-2.png)"></div>
+			  <div data-depth="0.10" class="icon-three parallax-layer" style="background-image:url(images/icons/icon-1.png)"></div>
+			  <div data-depth="0.30" class="icon-four parallax-layer" style="background-image:url(images/icons/icon-4.png)"></div>
+			  <div data-depth="0.10" class="icon-five parallax-layer" style="background-image:url(images/icons/icon-5.png)"></div>
+			  <div data-depth="0.20" class="icon-six parallax-layer" style="background-image:url(images/icons/icon-8.png)"></div>
+			  <div data-depth="0.10" class="icon-seven parallax-layer" style="background-image:url(images/icons/icon-7.png)"></div>
+			</div>
+			
+			<div class="title">Agenda</div>
+			<h2>Cronograma de 30&nbsp;minutos<br>para <span>cumplimiento y seguridad</span></h2>
+			
+			<!-- Cronograma usando barras de progreso -->
+			<div class="skills">
+			  
+			  <!-- 1 -->
+			  <div class="skill-item">
+				<div class="skill-header clearfix">
+				  <div class="skill-title">1) Bienvenida y contexto 2025 (0–5 min)</div>
+				  <div class="skill-percentage">
+					<div class="count-box"><span class="count-text" data-speed="2000" data-stop="17">0</span>%</div>
+				  </div>
+				</div>
+				<div class="skill-bar">
+				  <div class="bar-inner"><div class="bar progress-line" data-width="17"></div></div>
+				</div>
+			  </div>
+			  
+			  <!-- 2 -->
+			  <div class="skill-item">
+				<div class="skill-header clearfix">
+				  <div class="skill-title">2) Principales riesgos y brechas (5–12 min)</div>
+				  <div class="skill-percentage">
+					<div class="count-box"><span class="count-text" data-speed="2000" data-stop="40">0</span>%</div>
+				  </div>
+				</div>
+				<div class="skill-bar">
+				  <div class="bar-inner"><div class="bar progress-line" data-width="40"></div></div>
+				</div>
+			  </div>
+			  
+			  <!-- 3 -->
+			  <div class="skill-item">
+				<div class="skill-header clearfix">
+				  <div class="skill-title">3) Normativas y regulaciones clave (12–17 min)</div>
+				  <div class="skill-percentage">
+					<div class="count-box"><span class="count-text" data-speed="2000" data-stop="57">0</span>%</div>
+				  </div>
+				</div>
+				<div class="skill-bar">
+				  <div class="bar-inner"><div class="bar progress-line" data-width="57"></div></div>
+				</div>
+			  </div>
+			  
+			  <!-- 4 -->
+			  <div class="skill-item">
+				<div class="skill-header clearfix">
+				  <div class="skill-title">4) Casos reales: multas evitadas (17–23 min)</div>
+				  <div class="skill-percentage">
+					<div class="count-box"><span class="count-text" data-speed="2000" data-stop="77">0</span>%</div>
+				  </div>
+				</div>
+				<div class="skill-bar">
+				  <div class="bar-inner"><div class="bar progress-line" data-width="77"></div></div>
+				</div>
+			  </div>
+			  
+			  <!-- 5 -->
+			  <div class="skill-item">
+				<div class="skill-header clearfix">
+				  <div class="skill-title">5) Checklist y acciones inmediatas (23–28 min)</div>
+				  <div class="skill-percentage">
+					<div class="count-box"><span class="count-text" data-speed="2000" data-stop="93">0</span>%</div>
+				  </div>
+				</div>
+				<div class="skill-bar">
+				  <div class="bar-inner"><div class="bar progress-line" data-width="93"></div></div>
+				</div>
+			  </div>
+			  
+			  <!-- 6 -->
+			  <div class="skill-item">
+				<div class="skill-header clearfix">
+				  <div class="skill-title">6) Cierre y agenda personalizada (28–30 min)</div>
+				  <div class="skill-percentage">
+					<div class="count-box"><span class="count-text" data-speed="2000" data-stop="100">0</span>%</div>
+				  </div>
+				</div>
+				<div class="skill-bar">
+				  <div class="bar-inner"><div class="bar progress-line" data-width="100"></div></div>
+				</div>
+			  </div>
+			  
+			</div>
+			
+		  </div>
+		</div>
+		
+	  </div>
+	</div>
+  </section>
+  <!-- End Skill Section -->
+  
 	
 	<!-- Feature Section -->
     <section class="feature-section">
@@ -199,55 +512,63 @@
 					</div>
 				</div>
 				
-				<!-- Content Column -->
-				<div class="content-column col-lg-7 col-md-12 col-sm-12">
-					<div class="inner-column">
-						<!-- Sec Title -->
-						<div class="sec-title">
-							<div class="title">Our Features</div>
-							<h2>Your site's organic SEO rankings have a definitive effect on your business's bottom line</h2>
-						</div>
-						<div class="row clearfix">
-							
-							<!-- Feature Block -->
-							<div class="feature-block col-lg-6 col-md-6 col-sm-12">
-								<div class="inner-box">
-									<div class="icon flaticon-success-1"></div>
-									<h3>24/7 Client Support</h3>
-									<div class="text">It is a long established fact reader will be distracted by readable its layout.</div>
-								</div>
-							</div>
-							
-							<!-- Feature Block -->
-							<div class="feature-block col-lg-6 col-md-6 col-sm-12">
-								<div class="inner-box">
-									<div class="icon flaticon-success-1"></div>
-									<h3>Robust Web Plan</h3>
-									<div class="text">It is a long established fact reader will be distracted by readable its layout.</div>
-								</div>
-							</div>
-							
-							<!-- Feature Block -->
-							<div class="feature-block col-lg-6 col-md-6 col-sm-12">
-								<div class="inner-box">
-									<div class="icon flaticon-success-1"></div>
-									<h3>Think Wisely Now</h3>
-									<div class="text">It is a long established fact reader will be distracted by readable its layout.</div>
-								</div>
-							</div>
-							
-							<!-- Feature Block -->
-							<div class="feature-block col-lg-6 col-md-6 col-sm-12">
-								<div class="inner-box">
-									<div class="icon flaticon-success-1"></div>
-									<h3>Certified Solutions</h3>
-									<div class="text">It is a long established fact reader will be distracted by readable its layout.</div>
-								</div>
-							</div>
-							
-						</div>
-					</div>
-				</div>
+<!-- Content Column -->
+<div class="content-column col-lg-7 col-md-12 col-sm-12">
+	<div class="inner-column">
+	  <!-- Sec Title -->
+	  <div class="sec-title">
+		<div class="title">4. Materiales incluidos</div>
+		<h2>Todo lo que necesitas para implementar de inmediato y respaldar tu sesión</h2>
+	  </div>
+  
+	  <div class="row clearfix">
+		<!-- Feature Block -->
+		<div class="feature-block col-lg-6 col-md-6 col-sm-12">
+		  <div class="inner-box">
+			<div class="icon flaticon-success-1"></div>
+			<h3>Checklist descargable</h3>
+			<div class="text">
+			  Lista priorizada de verificación para evaluar riesgos, cumplir requisitos y asignar responsables.
+			</div>
+		  </div>
+		</div>
+  
+		<!-- Feature Block -->
+		<div class="feature-block col-lg-6 col-md-6 col-sm-12">
+		  <div class="inner-box">
+			<div class="icon flaticon-success-1"></div>
+			<h3>Certificado digital</h3>
+			<div class="text">
+			  Constancia de participación con tu nombre y fecha de realización del webinar.
+			</div>
+		  </div>
+		</div>
+  
+		<!-- Feature Block -->
+		<div class="feature-block col-lg-6 col-md-6 col-sm-12">
+		  <div class="inner-box">
+			<div class="icon flaticon-success-1"></div>
+			<h3>Presentación PDF</h3>
+			<div class="text">
+			  Slides con el contenido clave: riesgos, normativas, casos reales y acciones recomendadas.
+			</div>
+		  </div>
+		</div>
+  
+		<!-- Feature Block -->
+		<div class="feature-block col-lg-6 col-md-6 col-sm-12">
+		  <div class="inner-box">
+			<div class="icon flaticon-success-1"></div>
+			<h3>Acceso a grabación</h3>
+			<div class="text">
+			  Link privado para asistentes registrados, ideal para repaso interno y capacitación del equipo.
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+  
 				
 			</div>
 		</div>
@@ -358,6 +679,8 @@
 		</div>
 	</section>
 	<!-- End Services Section -->
+
+	
 	
 	<!-- Website Section -->
     <section class="website-section">
@@ -786,67 +1109,98 @@
 	</section>
 	<!-- End Pricing Section -->
 	
-	<!-- Contact Section -->
-	<section class="contact-section">
-		<div class="auto-container">
-			
-			<div class="row clearfix">
-				
-				<!-- Form Column -->
-				<div class="form-column col-lg-5 col-md-12 col-sm-12">
-					<div class="inner-column">
-						<!-- Sec Title -->
-						<div class="sec-title">
-							<div class="title">Contact Us</div>
-							<h2>Have questions in mind? <br> Let us help you!</h2>
-						</div>
-						
-						<!-- Default Form -->
-						<div class="default-form">
-							<form method="post" action="https://html.themexriver.com/searmek/blog.html">
-								
-								<label>Name*</label>
-								<div class="form-group">
-									<input type="text" name="username" placeholder="Gavin Solomon" required="">
-									<span class="input-icon fa fa-user"></span>
-								</div>
-								
-								<label>Email*</label>
-								<div class="form-group">
-									<input type="email" name="email" placeholder="support24@gmail.com" required="">
-									<span class="input-icon fa fa-envelope"></span>
-								</div>
-								
-								<label>Message*</label>
-								<div class="form-group">
-									<textarea name="message" placeholder="Message here"></textarea>
-									<span class="input-icon fa fa-pencil"></span>
-								</div>
-
-								<div class="form-group">
-									<button class="theme-btn btn-style-one">Submit Question <span class="icon fa fa-arrow-right"></span></button>
-								</div>
-								
-							</form>
-						</div>
-						
-					</div>
-				</div>
-				
-				<!-- Image Column -->
-				<div class="image-column col-lg-7 col-md-12 col-sm-12">
-					<div class="inner-column">
-						<div class="image">
-							<img src="images/resource/message-2.png" alt="" />
-						</div>
-					</div>
-				</div>
-				
+<!-- Contact Section -->
+<section class="contact-section">
+	<div class="auto-container">
+	  <div class="row clearfix">
+  
+		<!-- Form Column -->
+		<div class="form-column col-lg-5 col-md-12 col-sm-12">
+		  <div class="inner-column">
+			<!-- Sec Title -->
+			<div class="sec-title">
+			  <div class="title">5. Formulario de Registro</div>
+			  <h2>Reserva tu lugar sin costo en nuestra sesión personalizada</h2>
 			</div>
-			
+  
+			<!-- Default Form -->
+			<div class="default-form">
+			  <form method="post" action="#">
+				<!-- Nombre -->
+				<label>Nombre*</label>
+				<div class="form-group">
+				  <input type="text" name="nombre" placeholder="Tu nombre completo" required autocomplete="name">
+				  <span class="input-icon fa fa-user"></span>
+				</div>
+  
+				<!-- Empresa -->
+				<label>Empresa*</label>
+				<div class="form-group">
+				  <input type="text" name="empresa" placeholder="Nombre de la empresa" required autocomplete="organization">
+				  <span class="input-icon fa fa-building"></span>
+				</div>
+  
+				<!-- Cargo -->
+				<label>Cargo*</label>
+				<div class="form-group">
+				  <input type="text" name="cargo" placeholder="Puesto / Rol" required>
+				  <span class="input-icon fa fa-briefcase"></span>
+				</div>
+  
+				<!-- Email -->
+				<label>Email*</label>
+				<div class="form-group">
+				  <input type="email" name="email" placeholder="tucorreo@empresa.com" required autocomplete="email">
+				  <span class="input-icon fa fa-envelope"></span>
+				</div>
+  
+				<!-- Teléfono -->
+				<label>Teléfono*</label>
+				<div class="form-group">
+				  <input type="tel" name="telefono" placeholder="+52 55 1234 5678" required inputmode="tel" pattern="[\d\+\-\s\(\)]{7,}">
+				  <span class="input-icon fa fa-phone"></span>
+				</div>
+  
+				<!-- Selección de fecha/hora -->
+				<label>Fecha y hora preferida (personalización)*</label>
+				<div class="form-group">
+				  <input type="datetime-local" name="fecha_hora" required>
+				  <span class="input-icon fa fa-calendar"></span>
+				</div>
+  
+				<!-- Consentimiento -->
+				<div class="form-group">
+				  <label style="display:flex; gap:10px; align-items:flex-start; font-weight:400;">
+					<input type="checkbox" name="consentimiento" required style="margin-top:5px;">
+					<span>Acepto recibir comunicaciones relacionadas con este webinar y materiales.</span>
+				  </label>
+				</div>
+  
+				<!-- CTA -->
+				<div class="form-group">
+				  <button type="submit" class="theme-btn btn-style-one">
+					Reservar mi lugar sin costo <span class="icon fa fa-arrow-right"></span>
+				  </button>
+				</div>
+			  </form>
+			</div>
+		  </div>
 		</div>
-	</section>
-	<!-- End Contact Section -->
+  
+		<!-- Image Column -->
+		<div class="image-column col-lg-7 col-md-12 col-sm-12">
+		  <div class="inner-column">
+			<div class="image">
+			  <img src="images/resource/message-2.png" alt="" />
+			</div>
+		  </div>
+		</div>
+  
+	  </div>
+	</div>
+  </section>
+  <!-- End Contact Section -->
+  
 	
 <!-- Main Footer -->
 <footer class="main-footer">
