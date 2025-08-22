@@ -911,17 +911,17 @@ img{
 
 .sec-title .title{
     position: relative;
-    color: #002176;
+    color: #ffffff;
     font-size: 12px;
     padding: 2px 22px;
     border-radius: 50px;
     display: inline-block;
-    background-color: #ffdb4c;
+    background-color: #38d997;;
 }
 
 .sec-title .title.style-two{
-	background-color:#66aeff;
-	color:#002176;
+	background-color:#38d997;;
+	color:#0B3D2E;
 }
 
 .sec-title .title.style-three{
@@ -1987,7 +1987,7 @@ img{
 	background-image: -o-linear-gradient(left, #2343BA 0%, #2b49b8 100%);
 	background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #2343BA), color-stop(100, #2b49b8));
 	background-image: -webkit-linear-gradient(left, #2343BA 0%, #2b49b8 100%);
-	background-image: linear-gradient(to right, #2343BA 0%, #2b49b8 100%);
+	background-image: linear-gradient(to right, #0E1A17 0%, #1E7A37 100%);
 }
 
 .banner-section .patern-layer-one{
@@ -2120,8 +2120,7 @@ img{
 	padding:2px 15px;
 	border-radius:50px;
 	display:inline-block;
-	background-color:#66aeff;
-}
+	background-color: #38d997;}
 
 .banner-section .content-column .inner-column{
 	position:relative;
@@ -2984,7 +2983,7 @@ input:focus{
 .website-section{
 	position:relative;
 	padding:100px 0px 95px;
-	background-color:#2343ba;
+	background-image: linear-gradient(to right, #0E1A17 0%, #1E7A37 100%);
 }
 
 .website-section .inner-container{
@@ -3910,8 +3909,30 @@ input:focus{
 .main-footer{
 	position:relative;
 	padding:100px 0px 30px;
-	background-color:#2343ba;
+background-image: linear-gradient(to right, #0E1A17 0%, #1E7A37 100%);
 }
+/* Textos de contacto más pequeños */
+.footer-widget .contact-list p,
+.footer-widget .contact-list a,
+.footer-widget .contact-list strong {
+  font-size: 14px;      /* Ajusta según necesidad (13–15px) */
+  line-height: 1.5;
+}
+
+.footer-widget .contact-list p {
+  margin: 2px 0 6px;
+  color: #ddd;          /* Gris claro para contraste */
+}
+
+/* Opcional: destacar emails y teléfonos */
+.footer-widget .contact-list a {
+  color: #38d997;       /* Verde corporativo */
+  text-decoration: none;
+}
+.footer-widget .contact-list a:hover {
+  text-decoration: underline;
+}
+
 
 .main-footer .icons{
 	position:absolute;
@@ -9856,7 +9877,7 @@ input:focus{
 	padding:1px 35px;
 	border-radius:50px;
 	display:inline-block;
-	background-color:#135ff9;
+	background-color:#38d997;;
 }
 
 .skill-section .skill-column h2{
